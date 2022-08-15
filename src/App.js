@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Board from "./Components/Board";
+export const startNode = [5, 5];
+export const endNode = [10, 15];
+export const size = [15, 20];
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <div style={{ display: 'flex', height: '80vh', justifyContent: 'center', alignItems: 'center' }}>
+        <Board />
+      </div>
+
+    </React.Fragment>
   );
 }
 
